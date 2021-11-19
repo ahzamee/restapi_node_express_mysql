@@ -1,4 +1,5 @@
 const Customer = require("../models/customer.model.js");
+const multer = require('multer')
 
 // Create and Save a new Customer
 exports.create = (req, res) => {
@@ -114,3 +115,15 @@ exports.deleteAll = (req, res) => {
     else res.send({ message: `All Customers were deleted successfully!` });
   });
 };
+
+var uploading = multer({
+  dest: __dirname + '/var/www/restApiTest/images',
+})
+
+exports.uploadImage =(req, res) => {
+  multer({
+    dest: __dirname + '/var/www/restApiTest/images/',
+  })
+
+  res.send({ message: `successfully inserted!` });
+}
