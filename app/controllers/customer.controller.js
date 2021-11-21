@@ -122,6 +122,6 @@ exports.uploadImage =(req, res) => {
   })
   console.log("data","image saved");
   //console.log("res",res);
-  console.log("req",req.body);
+  console.log("req",req);
   res.send({ message: `successfully inserted!` });
 }
