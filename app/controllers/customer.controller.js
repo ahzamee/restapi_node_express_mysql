@@ -121,7 +121,7 @@ exports.uploadImage =(req, res) => {
     dest: '/var/www/restApiTest/images/',
   })
   console.log("data","image saved");
-  console.log("res",res);
-  console.log("req",req.files.picture);
+  //console.log("res",res);
+  console.log("req",req.body);
   res.send({ message: `successfully inserted!` });
 }
