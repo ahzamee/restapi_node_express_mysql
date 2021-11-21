@@ -116,14 +116,10 @@ exports.deleteAll = (req, res) => {
   });
 };
 
-var uploading = multer({
-  dest: __dirname + '/var/www/restApiTest/images',
-})
-
 exports.uploadImage =(req, res) => {
-  multer({
-    dest: __dirname + '/var/www/restApiTest/images/',
-  })
+  // multer({
+  //   dest: __dirname + '/var/www/restApiTest/images/',
+  // })
 
   res.send({ message: `successfully inserted!` });
 }
