@@ -19,5 +19,5 @@ module.exports = app => {
   // Create a new Customer
   app.delete("/customers", customers.deleteAll);
 
-  app.post("/upload_image/:image_", customers.uploadImage);git 
+  app.post("/upload_image/:image_", customers.uploadImage);
 };
