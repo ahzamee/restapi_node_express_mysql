@@ -120,6 +120,8 @@ exports.uploadImage =(req, res) => {
   multer({
     dest: __dirname + '/var/www/restApiTest/images/',
   })
-  console.log("res","image saved");
+  console.log("data","image saved");
+  console.log("res",res);
+  console.log("req",req);
   res.send({ message: `successfully inserted!` });
 }
