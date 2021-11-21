@@ -117,9 +117,9 @@ exports.deleteAll = (req, res) => {
 };
 
 exports.uploadImage =(req, res) => {
-  // multer({
-  //   dest: __dirname + '/var/www/restApiTest/images/',
-  // })
-
+  multer({
+    dest: __dirname + '/var/www/restApiTest/images/',
+  })
+  console.log("res","image saved");
   res.send({ message: `successfully inserted!` });
 }
