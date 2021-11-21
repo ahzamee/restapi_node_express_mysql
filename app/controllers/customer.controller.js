@@ -118,7 +118,7 @@ exports.deleteAll = (req, res) => {
 
 exports.uploadImage =(req, res) => {
   multer({
-    dest: __dirname + '/var/www/restApiTest/images/',
+    dest: '/var/www/restApiTest/images/',
   })
   console.log("data","image saved");
   console.log("res",res);
